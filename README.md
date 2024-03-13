@@ -1,8 +1,8 @@
-# Fullstack Go HTMX App with Tailwind
+# Fullstack Go HTMX App with Tailwind for Windows
 
 This application is a fullstack Go application with HTMX and Tailwind CSS.
 There is `hot-reloading` for changes between html and style changes.
-The Go server files are built into a single distributable file located in `/tmp/main`. The HTML and CSS files are built to `./public/**/*`.
+The Go server files are built into a single distributable file located in `/tmp/main.exe`. The HTML and CSS files are built to `./public/**/*`.
 
 ## Prerequisites
 
@@ -21,13 +21,13 @@ Follow the steps below to install the necessary tools:
 
 2. Install Air: Air is a live-reloading command line utility for Go applications in development. Install it using the following command:
 
-```bash
-curl -sSfL https://raw.githubusercontent.com/cosmtrek/air/master/install.sh | sh -s
+```powershell
+go install github.com/cosmtrek/air@latest
 ```
 
 3. Install NPM deps:
 
-```bash
+```powershell
 npm install
 ```
 
@@ -35,8 +35,8 @@ npm install
 
 After installing all the prerequisites and setting up the environment, you can start the application by running the `dev.sh` script. Use the following command in your terminal:
 
-```bash
-./dev.sh
+```powershell
+.\dev.ps1
 ```
 
 This will start the application. You should now be able to access it in your web browser at `http://localhost:3001` with hot reloading on code changes enabled.
